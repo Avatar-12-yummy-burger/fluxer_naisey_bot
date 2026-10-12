@@ -156,6 +156,7 @@ def make_pet_gif(source, dest, speed_ms=20):
 
 MAX_EXPONENT = 1000
 MAX_RESULT_DIGITS = 1000
+MAX_FACTORIAL_INPUT = 10000
 
 def calculate(expr):
     if expr.strip().lower() == "list":
@@ -214,7 +215,7 @@ def calculate(expr):
         "e": cmath.e,
         "i": 1j,
         "abs": abs,
-        "factorial": math.factorial,
+        "factorial": lambda x: math.factorial(x) if x <= MAX_FACTORIAL_INPUT else (_ for _ in ()).throw(ValueError(f"Factorial input too large (max {MAX_FACTORIAL_INPUT})")),
         "round": round,
         "floor": math.floor,
         "ceil": math.ceil,
