@@ -56,6 +56,7 @@ async def naiseyhelp(ctx):
     embed.add_field(name=f"{prefux}revive (user)", value="Revive the dead :3", inline=False)
     embed.add_field(name=f"{prefux}deltarot", value="Says Deltarots -_-", inline=False)
     embed.add_field(name=f"{prefux}gamble", value="Let's go gambling!!", inline=False)
+    embed.add_field(name=f"{prefux}coinflip", value="Flip a coin!", inline=False)
     embed.add_field(name=f"{prefux}bored", value="Bored -_-", inline=False)
     embed.add_field(name=f"{prefux}starwalker", value="Starwalker :)", inline=False)
     embed.add_field(name=f"{prefux}roll (Finishing number) (Starting number [Optional, Default is 1])", value="Rolls a random number between the Starting number and Finishing number.", inline=False)
