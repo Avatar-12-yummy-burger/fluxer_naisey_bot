@@ -828,6 +828,15 @@ async def bored(ctx):
     await ctx.reply(file=file)
     await status.delete()
 
+@bot.command()
+async def coinflip(ctx):
+
+    messages = ["Heads",
+                "Tails"]
+
+    choice = random.choice(messages)
+    await ctx.reply("The coin has landed on: " + choice)
+
 if not debug:
     funcs.keep_alive()
 
