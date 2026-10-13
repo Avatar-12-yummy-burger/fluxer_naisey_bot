@@ -830,6 +830,14 @@ async def bored(ctx):
     await status.delete()
 
 @bot.command()
+async def yogurt(ctx):
+    gurt = "files/images/gurt.png"
+    status = await ctx.reply("uploading...")
+    file = fluxer.File(gurt)
+    await ctx.reply(file=file)
+    await status.delete()
+
+@bot.command()
 async def coinflip(ctx):
 
     messages = ["Heads",
