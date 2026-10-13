@@ -99,7 +99,6 @@ def get_last_hugger(server_id, target_id):
 
     return result[0] if result else None
 
-
 def set_last_hugger(server_id, target_id, hugger_id):
     conn = get_connection()
     cursor = conn.cursor()
@@ -110,6 +109,11 @@ def set_last_hugger(server_id, target_id, hugger_id):
         ON CONFLICT (server_id, target_id)
         DO UPDATE SET hugger_id = EXCLUDED.hugger_id, hugged_at = NOW()
     """, (str(server_id), str(target_id), str(hugger_id)))
+
+    cursor.execute("""
+        DELETE FROM last_hugged
+        WHERE hugged_at < NOW() - make_interval(days => %s)
+    """, (HUG_EXPIRY_DAYS,))
 
     conn.commit()
     cursor.close()
