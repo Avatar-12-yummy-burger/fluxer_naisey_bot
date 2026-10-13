@@ -179,6 +179,15 @@ async def praise(ctx, *, who: str = None):
 
     target = who
 
+    if len(ctx.mentions) < 2:
+      is_or_are = "is"
+      isnt = "isn't"
+      more = " "
+    elif len(ctx.mentions) >= 2:
+      is_or_are = "are"
+      isnt = "aren't"
+      more = " guys "
+
     if who in "@everyone":
         await ctx.reply(f"{user} has praised everyone! (everyone likes it :3)")
         return
@@ -188,18 +197,25 @@ async def praise(ctx, *, who: str = None):
     elif who in bot.user.mention:
         await ctx.reply("Thanks >w<\nyou're awesome too! ^//^")
         return
-
-    messages = \
-        [
-            f"Hehe ^^\n{target} is such a cutie! ^^",
-            f"Awwwww :3\n{target} is soooo cute! :33 ",
-            f"{target}! you are so adorable! :3 ",
-            f"{target}! you are sooo awesome! :3 ",
-            f"Awwwww! :3 isn't {target} sooooo cute? ^?^",
-            f"{target} is so cute! :3 >w<",
-            f"{target} is so cute that I can hug them endlessly! ^w^",
-            f"{target} is such a cutie patooti :3 ^~^"
-        ]
+    if len(ctx.mentions) < 2:
+      messages = \
+          [
+              f"{user} is cuddling {target}. Awwwww :3",
+              f"{user} and {target} are now cuddling! :3",
+              f"{user} gives {target} a warm cuddle! :3",
+              f"{user} and {target} are wrapped up in a cuddle! :3",
+              f"{user} and {target} are having a cuddle session! :3",
+              f"{user} and {target} are snuggled up together! :3",
+              f"{user} has cuddles {target} into oblivion :3",
+              f"{target} got absolutely loved and cuddled by {user} :3"
+          ]
+    elf len(ctx.mentions) >= 2:
+        messages = \
+            [
+              f"{user} gives {target} a warm cuddle! :3",
+              f"{user} has cuddled {target} into oblivion :3",
+              f"{target} got absolutely loved and cuddled by {user} :3"
+            ]
 
     choice = random.choice(messages)
 
