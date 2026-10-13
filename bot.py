@@ -831,7 +831,7 @@ async def bored(ctx):
 
 @bot.command()
 async def yogurt(ctx):
-    gurt = "files/images/gurt.png"
+    gurt = "files/images/gurt.jpg"
     status = await ctx.reply("uploading...")
     file = fluxer.File(gurt)
     await ctx.reply(file=file)
