@@ -162,7 +162,7 @@ async def cuddle(ctx, *, who: str = None):
                 f"{user} and {target} are wrapped up in a cuddle! :3",
                 f"{user} and {target} are having a cuddle session! :3",
                 f"{user} and {target} are snuggled up together! :3",
-                f"{user} has cuddles {target} into oblivion :3",
+                f"{user} has cuddled {target} into oblivion :3",
                 f"{target} got absolutely loved and cuddled by {user} :3"
             ]
     elif len(ctx.mentions) >= 2:
