@@ -209,7 +209,7 @@ async def praise(ctx, *, who: str = None):
               f"{user} has cuddles {target} into oblivion :3",
               f"{target} got absolutely loved and cuddled by {user} :3"
           ]
-    elf len(ctx.mentions) >= 2:
+    elif len(ctx.mentions) >= 2:
         messages = \
             [
               f"{user} gives {target} a warm cuddle! :3",
