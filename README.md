@@ -1,6 +1,7 @@
 It's a silly little fluxer bot for silly little things like hugging, cuddling, petting etc.
 [Invite it from here](https://web.canary.fluxer.app/oauth2/authorize?client_id=1548951710439833600&scope=bot&permissions=247880)
 
+Privacy policy: [PRIVACY.md](PRIVACY.md)
 
 ## Deploying
 
