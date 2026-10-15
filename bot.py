@@ -370,6 +370,24 @@ async def deltarot(ctx):
             "Hey i think this kinda took a weird route.",
             "Human... I remember... You're genocides...",
             "Hey undyne!\nHow many human souls do we need to break the barrier?",
+            "Hey there little guy!",
+            "Heh its my jarona!",
+            "He is in some king of snowgrave.",
+            "*_Swoon_",
+            "I'm the Roaring Knight! and am a fraud!",
+            "*You looked behind the tree",
+            "*Well there is a man here",
+            "*And he is offering you a egg",
+            "*Susie's idea",
+            "WD.Gaster in deltarune build it all from a empty room.",
+            "Its 12:25 outside.",
+            "Well this stinks.",
+            "I'm Old!",
+            "I'm fOld!",
+            "What do you do with a drunken gonner!\n What do you do with a drunken gonner!\nWhat do you do with a drunken gonner!\nEarly in the Roaring!",
+            "PINK AND YELLOW?!?! 🩷=💛",
+            "*Why wold Chara do this?!?!",## naise add chara doing What me??? pose to this line pls!!! :3 ty already!! :3 oh and i added the png lol it is Chara_What_Me.png in the files/images folder :3 ##
+            "I am Frisk.",
             f"CHAOS CHAOS!"
         ]
 
