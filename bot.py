@@ -763,6 +763,8 @@ async def murder(ctx, *, who: str = None):
         await ctx.reply("That's suicide. Don't joke with that. If you are not okay, call a suicide helpline. Here are some resources:\n1.https://blog.opencounseling.com/suicide-hotlines/\n2.https://findahelpline.com\n3.https://en.wikipedia.org/wiki/List_of_suicide_crisis_lines yes we have wiki for this.")
     elif who:
         await ctx.reply(choice)
+    elif who == "<@1560341504323489795>":
+        await ctx.reply("build in progers pls wait")
     else:
         await ctx.reply("Mention someone or put someones name to slay themmm >:3")
 
